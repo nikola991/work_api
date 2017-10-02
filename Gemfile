@@ -20,7 +20,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
- gem 'jquery-rails'
+# gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
@@ -33,6 +33,12 @@ gem 'active_model_serializers'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+group :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "factory_girl_rails"
+  gem 'ffaker'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
